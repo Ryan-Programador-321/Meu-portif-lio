@@ -65,16 +65,21 @@
 
         .foto{
             display: block;
-            justify-items: center;
-            margin-top: 5%;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            /* aparentemente "text-align" trata qualquer elemento in line ou in line-block como texto" */
+            /* justify-items: center; */
+            margin-top: 5% ;
         }
 
         .foto img{
+           
             width: 300px;
             height: 300px;
             border-radius: 100%;
-            object-fit: cover;
-            margin-bottom: 1rem;
+            /* object-fit: cover; */
+            margin-bottom: 1.5%;
             border: 4px solid #4b3ca7;
         }
 
@@ -88,7 +93,7 @@
         }
 
         .foto button{
-            margin-top: 15%;
+            margin-top: 2%;
             padding: 15px;
             font-size: 18px;
             border-radius: 15px;
@@ -105,7 +110,7 @@
         .piu{
             display: block;
             justify-items: center;
-            margin-top: 10%;
+            margin-top: 7%;
             
         }
 
@@ -153,6 +158,7 @@
         .pain{
             display: block;
             justify-items: center;
+            text-align: center;
             margin-top: 5%;
         }
 
@@ -168,6 +174,7 @@
         }
 
         .pain a{
+            display: inline-block;
             text-decoration: none;
             margin-bottom: 1%;
             color: #483bdf;
@@ -235,6 +242,8 @@
         }
     </style>
 </head>
+
+
 <body>
 
     <header>
@@ -256,10 +265,10 @@
     
 
     <section class="foto">
-            <img src="IMGs/output (1).jpg" alt="uma roda">
+            <img src="/IMGs/output (1).jpg" alt="imagem de perfil">
             <h1>Ryan - Desenvolvedor Front-End</h1>
             <p>Apaixonado por criar soluções web simples e funcionais.</p>
-            <a href="PDFs/CURRÍCULO-DO-RYAN.pdf" download><button>Baixar currículo</button></a>
+            <a href="/PDFs/CURRÍCULO-RYAN.pdf" download><button>Baixar currículo</button></a>
         
     </section>
 <p id="one"></p>
@@ -335,4 +344,17 @@
     </footer>
 
 </body>
+
+<script>
+   
+    if (performance.navigation.type === 1) 
+    
+         {window.location.href = "http://127.0.0.1:5500/index.html";}
+
+    //pra recarregar certinho
+
+    //agora fazer o mesmo pras setas de voltar e prosseguir
+ 
+ </script>
+ 
 </html>
